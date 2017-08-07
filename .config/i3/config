@@ -22,7 +22,7 @@ bindsym Mod1+Return exec termite
 bindsym Mod1+q kill
 
 # Rofi 
-bindsym Mod1+d exec rofi -show run -lines 8 -font "Terminus 30"  -bw 0 -width 50 --seperator "none" -line-margin 20 -hide-scrollbar -bw 30 -padding 50
+bindsym Mod1+d exec "rofi -show run -modi ssh,run"
 
 # Monitor setup
 bindsym Mod1+m exec ~/.config/screen-layout/monitor-setup.sh 
