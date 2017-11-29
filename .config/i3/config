@@ -22,7 +22,14 @@ bindsym Mod1+Return exec termite
 bindsym Mod1+q kill
 
 # Rofi 
-bindsym Mod1+d exec "rofi -show run -modi ssh,run"
+bindsym Mod1+Tab exec "rofi -show run -modi ssh,run,tasks:~/Projects/workstation/bin/tasks,projects:~/Projects/workstation/bin/projects,calc:~/Projects/workstation/bin/calc"
+
+# Rofi-pass
+bindsym Mod1+grave exec "rofi-pass"
+
+# Screenshot
+bindsym Print exec scrot -e 'mv $f ~/Screenshots'
+bindsym --release Mod1+Print exec scrot -s -e 'mv $f ~/Screenshots'
 
 # Monitor setup
 bindsym Mod1+m exec ~/.config/screen-layout/monitor-setup.sh 

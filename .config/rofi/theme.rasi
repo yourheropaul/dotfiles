@@ -1,0 +1,37 @@
+* {
+  light: rgba( 187, 170, 204, 100% );
+  light-trans: rgba( 187, 170, 204, 80% );
+  dark:  #231B2BDD;
+
+  text-color:       @light;
+  background-color: transparent;
+  spacing: 10;
+
+  font: "System San Fransisco Display 30";
+}
+
+#window {
+  background-color: @dark;
+  padding: 200;
+  width: 50%;
+}
+
+#mainbox {
+  background-color: transparent;
+}
+
+#inputbar {
+  text-color: white;
+  background-color: @dark;
+  padding: 20px;
+  spacing: 10px;
+}
+
+#element {
+  padding: 20;
+}
+
+#element.selected.normal {
+  text-color: @dark;
+  background-color: @light-trans;
+}

@@ -1,15 +1,4 @@
-rofi.color-enabled:  true
-rofi.color-window:   #dd273238, #dd273238, #001e2529
-rofi.color-normal:   #00000000, #80cbc4, #00000000, #394249, #ffffff
-rofi.color-active:   #273238, #9980cbc4, #273238, #394249, #80cbc4
-rofi.color-urgent:   #273238, #ff1844, #273238, #394249, #ff1844
-rofi.font:           System San Fransisco Display 30
-rofi.lines:          8 
-rofi.bw:             0 
-rofi.width:          50
-rofi.seperator:      none
-rofi.line-margin:    20 
-rofi.hide-scrollbar: true
-rofi.bw:             50 
-rofi.padding:        100
+rofi.theme: theme.rasi
+rofi.lines:          10
 rofi.ssh-command:    {terminal} -e "{ssh-client} {host}"
+rofi.kb-mode-next:   Shift+Right,Alt+Tab

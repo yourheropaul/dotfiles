@@ -19,6 +19,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'quramy/tsuquyomi'
 Plug 'mhartington/deoplete-typescript'
 Plug 'Chiel92/vim-autoformat'
+Plug 'cespare/vim-toml'
 
 call plug#end()
 
