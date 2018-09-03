@@ -20,6 +20,10 @@ Plug 'quramy/tsuquyomi'
 Plug 'mhartington/deoplete-typescript'
 Plug 'Chiel92/vim-autoformat'
 Plug 'cespare/vim-toml'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'digitaltoad/vim-pug'
 
 call plug#end()
 
@@ -57,7 +61,7 @@ nnoremap <C-H> <C-W><C-H>
 let g:go_fmt_command = "goimports"
 au FileType go nmap <leader>t <Plug>(go-test)
 
-"let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_at_startup = 1
 call deoplete#custom#set('_', 'matchers', ['matcher_full_fuzzy'])
 set completeopt+=noinsert,noselect
 set completeopt-=preview
@@ -65,3 +69,8 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " Typescript
 au BufWrite *.ts :Autoformat " Requires https://github.com/vvakame/typescript-formatter
+
+" Save command
+noremap <silent> <C-S>          :update<CR>
+vnoremap <silent> <C-S>         <C-C>:update<CR>
+inoremap <silent> <C-S>         <C-O>:update<CR>

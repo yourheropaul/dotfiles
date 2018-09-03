@@ -1,18 +1,18 @@
 * {
   light: rgba( 187, 170, 204, 100% );
   light-trans: rgba( 187, 170, 204, 80% );
-  dark:  #231B2BDD;
+  dark:  #231B2Bee;
 
   text-color:       @light;
   background-color: transparent;
   spacing: 10;
 
-  font: "System San Fransisco Display 30";
+  font: "System San Fransisco Display 10";
 }
 
 #window {
   background-color: @dark;
-  padding: 200;
+  padding: 250;
   width: 50%;
 }
 
@@ -34,4 +34,9 @@
 #element.selected.normal {
   text-color: @dark;
   background-color: @light-trans;
+}
+
+#message {
+  height: 1em;
+  padding: 0;
 }
