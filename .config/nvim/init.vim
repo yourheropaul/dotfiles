@@ -74,3 +74,6 @@ au BufWrite *.ts :Autoformat " Requires https://github.com/vvakame/typescript-fo
 noremap <silent> <C-S>          :update<CR>
 vnoremap <silent> <C-S>         <C-C>:update<CR>
 inoremap <silent> <C-S>         <C-O>:update<CR>
+
+" SpecStack
+au BufWritePost *.feature silent !specfmt -w %

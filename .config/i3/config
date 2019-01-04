@@ -22,7 +22,7 @@ bindsym Mod1+Return exec termite
 bindsym Mod1+q kill
 
 # Rofi 
-bindsym Mod1+Tab exec "rofi -show run -modi ssh,run,tasks:~/Projects/workstation/bin/tasks,projects:~/Projects/workstation/bin/projects,calc:~/Projects/workstation/bin/calc"
+bindsym Mod1+Tab exec "rofi -show run -modi ssh,run,projects:~/Projects/workstation/bin/projects,calc:~/Projects/workstation/bin/calc"
 
 # Rofi-pass
 bindsym Mod1+grave exec "rofi-pass"
