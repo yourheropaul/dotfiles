@@ -1,4 +1,4 @@
 rofi.theme: theme.rasi
 rofi.lines:          10
 rofi.ssh-command:    {terminal} -e "{ssh-client} {host}"
-rofi.kb-mode-next:   Shift+Right,Alt+Tab
+rofi.kb-mode-next:   Shift+Right,Shift+Tab,Ctrl+Tab
