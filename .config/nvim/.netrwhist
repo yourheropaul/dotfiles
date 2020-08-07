@@ -1,4 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/iam/.config/nvim'
-let g:netrw_dirhist_2='/home/paul/Tasks'
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/paul/Projects/outerlabs/onewbs/web'
+let g:netrw_dirhist_8='/home/paul/Projects/outerlabs/onewbs/web/src/testing'
+let g:netrw_dirhist_7='/home/paul/Projects/outerlabs/compass/test'
+let g:netrw_dirhist_6='/home/paul/Projects/outerlabs/compass/app/svc/project'
+let g:netrw_dirhist_5='/home/paul/Projects/outerlabs/compass/thumbnail'
+let g:netrw_dirhist_4='/home/paul/Projects/outerlabs/compass/test'
+let g:netrw_dirhist_3='/home/paul/Projects/outerlabs/compass/api'
+let g:netrw_dirhist_2='/home/paul/Projects/outerlabs/compass/app/svc/project'
+let g:netrw_dirhist_1='/home/paul/Projects/outerlabs/panorama/data'

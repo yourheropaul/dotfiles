@@ -4,30 +4,38 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+let g:loaded_python_provider = 0
+
 " Plugins
 execute pathogen#infect()
 
 call plug#begin()
 
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'fatih/vim-go', {  'tag': 'v1.22', 'do': ':GoUpdateBinaries' }
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'rust-lang/rust.vim'
+Plug 'jparise/vim-graphql'
+
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-go', { 'do': 'make'}
-Plug 'pangloss/vim-javascript'
-Plug 'leafgarland/typescript-vim'
-Plug 'quramy/tsuquyomi'
-Plug 'mhartington/deoplete-typescript'
+
+"Plug 'zchee/deoplete-go', { 'do': 'make'}
+
 Plug 'Chiel92/vim-autoformat'
 Plug 'cespare/vim-toml'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'digitaltoad/vim-pug'
+Plug 'vimwiki/vimwiki'
+Plug 'groenewege/vim-less'
 
 call plug#end()
-
-set runtimepath+=~/.config/nvim/plugged/deoplete.nvim/
 
 " Appearance
 set number
@@ -62,13 +70,12 @@ let g:go_fmt_command = "goimports"
 au FileType go nmap <leader>t <Plug>(go-test)
 
 let g:deoplete#enable_at_startup = 1
-call deoplete#custom#set('_', 'matchers', ['matcher_full_fuzzy'])
 set completeopt+=noinsert,noselect
 set completeopt-=preview
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " Typescript
-au BufWrite *.ts :Autoformat " Requires https://github.com/vvakame/typescript-formatter
+" au BufWrite *.ts :Autoformat " Requires https://github.com/vvakame/typescript-formatter
 
 " Save command
 noremap <silent> <C-S>          :update<CR>
